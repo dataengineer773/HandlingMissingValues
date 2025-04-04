@@ -1,0 +1,5 @@
+We want to select missing values in a DataFrame, isnull and notnull return booleans indicating whether a value is missing, Missing values are a ubiquitous problem in data wrangling, yet many underestimate the difficulty of
+working with missing data. pandas uses NumPy’s NaN (“Not A Number”) value to denote missing  values, but it is important to note that NaN is not fully implemented natively in pandas. For example, if we wanted to replace all
+strings containing male with missing values, we return an error, To have full functionality with NaN we need to import the NumPy library first Oftentimes a dataset uses a specific value to denote a missing observation, such as NONE, -999, or ..
+pandas’ read_csv includes a parameter allowing us to specify the values used to indicate missing values, We can also use pandas fillna function to impute the missing values of a column. Here, we show the places where Age is null using the isna 
+function, and then fill those values with the mean age of passengers.
